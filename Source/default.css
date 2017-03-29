@@ -1,10 +1,15 @@
 body {
+  background-color: black;
   color: white;
   font-family: 'Josefin Sans', sans-serif;
 }
 
 h2 {
   font-family: 'Josefin Sans', sans-serif;
+}
+
+.shuttle-divider {
+  margin: 0;
 }
 
 /* -------animated text ---------- */
@@ -87,28 +92,58 @@ svg {
 
 }
 
-.ship-title-300 {
-  opacity: 0.5;
-  font-family: 'Josefin Sans', sans-serif;
-  font: josefin;
-  font-size: 8em;
-  text-align: center;
-  padding-top: 1.5em;
+.ship-title-85x {
+  opacity: 1;
+  display: inline;
+  float: left;
+  padding-left: 5vw;
+  line-height: 10vw;
   color: transparent;
-  text-shadow: 0 0 5px rgba(255,255,255,0.5);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 6vw;
+  text-align: center;
+  background: url(../assets/backgrounds/space-station-par.jpg) repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-filter: invert(100%);
+  filter: hue-rotate(10deg) brightness(4) drop-shadow(4px 4px 8px black);
+  -webkit-background-clip: text;
 
 }
 
-.ship-title-350r {
-  color: white;
-  opacity: 0.5;
-  font: josefin;
-  font-size: 8em;
+.ship-title-m50 {
+  opacity: 1;
+  display: inline;
+  float: right;
+  padding-right: 5vw;
+  line-height: 10vw;
+  color: transparent;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 6vw;
   text-align: center;
-  padding-top: 0.2em;
-  text-shadow:
-      -1px -1px 1px #111,
-      2px 2px 1px #363636;
+  background: url(../assets/backgrounds/space-station-par.jpg) repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-filter: invert(100%);
+  filter: hue-rotate(10deg) brightness(4) drop-shadow(4px 4px 8px black);
+  -webkit-background-clip: text;
+
+}
+
+.ship-title-300 {
+  opacity: 1;
+  line-height: 30vw;
+  color: transparent;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16vw;
+  text-align: center;
+  background: url(../assets/backgrounds/space-station-par.jpg) repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-filter: invert(100%);
+  filter: hue-rotate(10deg) brightness(4) drop-shadow(10px 10px 10px black);
+  -webkit-background-clip: text;
+
 }
 
 #ship-M50 {
@@ -121,12 +156,20 @@ svg {
   overflow: hidden;
 }
 
+#ships-title {
+  position: static;
+  background-image: url(../assets/backgrounds/space-station-par.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 10vw;
+  width: 100%;
+}
 #ships-300-title-par {
   position: static;
   background-image: url(../assets/backgrounds/space-station-par.jpg);
   background-attachment: fixed;
   background-size: cover;
-  height: 30vh;
+  height: 30vw;
   width: 100%;
 }
 
