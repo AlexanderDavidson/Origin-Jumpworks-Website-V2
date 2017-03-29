@@ -6,6 +6,32 @@
   /*height: 32em;*/
 }
 
+.ship-title-flavor {
+  color: white;
+  opacity: 0.5;
+  font-size: 2em;
+  padding-top: 1em;
+  height: 3em;
+  text-align: center;
+  display: block;
+  text-shadow:
+      -1px -1px 1px #111,
+      2px 2px 1px #363636;
+
+}
+
+.ship-title {
+  color: white;
+  opacity: 0.5;
+  font: josefin;
+  font-size: 8em;
+  text-align: center;
+  padding-top: 0.2em;
+  text-shadow:
+      -1px -1px 1px #111,
+      2px 2px 1px #363636;
+}
+
 #ship-890jump {
   padding: 0;
   overflow: hidden;
@@ -21,6 +47,15 @@
   overflow: hidden;
 }
 
+#ships-300-title-par {
+  position: static;
+  background-image: url(../assets/backgrounds/space-station-par.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 30vh;
+  width: 100%;
+}
+
 #ship-300i {
   padding: 0;
   overflow: hidden;
@@ -28,15 +63,16 @@
 
 #ship-315p {
   padding: 0;
+  position: relative;
   overflow: hidden;
 }
 
 #ship-315p-gif {
   width: 100%;
-  height: 100%;
+  height: 169%;
   position: absolute;
-  top:0;
-  left:0;
+  top: -33%;
+  left: 0;
 
 }
 
@@ -48,7 +84,21 @@
 #ship-350r {
   padding: 0;
   overflow: hidden;
+  height: 48em;
 }
 
+#ship-350r-img {
+  top: -24%
+}
+
+#ship-350r-title-par {
+  position: static;
+  color: white;
+  background-image: url(../assets/backgrounds/space-station-par.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 20vh;
+  width: 100%;
+}
 
 /* ---- 890 Image 4900x1900 ---- */
