@@ -14,8 +14,8 @@
 
   </head>
   <body>
-    <div class="ui inverted segment">
-      <div class="ui inverted top fixed menu" id="navbar-top">
+    <div class="ui inverted segment" id="navbar-top">
+      <div class="ui inverted top fixed menu">
         <div class="item">
           <img src="../assets/origin-jumpworks/originlogo-v3.png">
         </div>
@@ -49,17 +49,22 @@
         </div>
       </div>
     </div>
-    <div class="ui inverted segment">
-      <div class="ui grey inverted menu" id="navbar-top">
-        <a class="item">
-          <i class="gamepad icon"></i>
-        </a>
-        <a class="item">
-          <i class="video camera icon"></i>
-        </a>
-        <a class="item">
-          <i class="video play icon"></i>
-        </a>
+    <div class="ui inverted segment" id="navbar-top-2">
+      <div class="ui grey inverted menu" id="grey-nav">
+        <div class="right menu">
+          <a class="item">
+            <i class="wrench icon"></i>
+            ┊ Build Your Own ┊
+          </a>
+          <a class="item">
+            <i class="suitcase icon"></i>
+            ┊ Origin Lifestyle ┊
+          </a>
+          <a class="item">
+            <i class="bitcoin icon"></i>
+            ┊ Certified Pre-Owned ┊
+          </a>
+        </div>
       </div>
     </div>
 
@@ -81,8 +86,9 @@
 
     <!-- 300 Series -->
     <div id="ships-300-title-par">
-      <h1>300 SERIES</h1>
+      <div class="ship-title-300">300 SERIES</div>
     </div>
+    <!-- 300i -->
       <div class="three column row ship-grid">
         <div class="grey column" id="ship-300i">
           <div class="ui fluid image">
@@ -92,28 +98,42 @@
             <img src="../assets/Ships/300-Series/300i/300i_flight_visual.jpg">
           </div>
         </div>
+        <!--  315p  -->
         <div class="orange column" id="ship-315p">
           <video id="ship-315p-gif" autoplay loop>
             <source src="../assets/Ships/300-Series/315p/315-jump-gif.webm" type="video/webm">
           </video>
+          <div class="ui black ribbon label">
+            <i class="big chevron right icon"></i> <h2>315p</h2>
+          </div>
         </div>
+        <!-- 325a -->
         <div class="red column" id="ship-325a">
           <div class="ui fluid image">
-            <div class="ui black ribbon label">
-              <i class="big chevron right icon"></i> <h2>300i</h2>
+            <div class="ui black right ribbon label">
+              <i class="big chevron right icon"></i> <h2>325a</h2>
             </div>
             <img src="../assets/Ships/300-Series/325a/325a_flight_visual.jpg">
           </div>
         </div>
       </div>
       <!-- 350r -->
-      <div id="ship-350r-title-par">
-        <div class="ship-title-flavor">The Multiple Murray Cup Winner</div>
-        <div class="ship-title">350r</div>
-
-      </div>
       </div>
       <div class="row ship-grid">
+        <svg viewbox="0 0 960 300">
+        	<symbol id="s-text">
+        		<text text-anchor="middle" x="50%" y="80%">350r</text>
+        	</symbol>
+
+        	<g class = "g-ants">
+        		<use xlink:href="#s-text" class="text-copy"></use>
+        		<use xlink:href="#s-text" class="text-copy"></use>
+        		<use xlink:href="#s-text" class="text-copy"></use>
+        		<use xlink:href="#s-text" class="text-copy"></use>
+        		<use xlink:href="#s-text" class="text-copy"></use>
+        	</g>
+        </svg>
+
         <div class="teal column" id="ship-350r">
           <div class="ui fluid image">
             <div class="ui black ribbon label">

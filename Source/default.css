@@ -1,5 +1,72 @@
+body {
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h2 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* -------animated text ---------- */
+
+svg {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    font: 20.5em 'Josefin Sans', sans-serif;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: rgba(255, 255, 255, 0.06);
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 0.01em;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #324C63;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #827E75;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #E6C97C;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #253545;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #4F7182;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+/* ----------------------- */
 #navbar-top {
   height: 8em;
+  margin: 0;
+}
+#navbar-top-2 {
+  height: 8em;
+  margin: 0;
+}
+
+#grey-nav {
+  height: 5em;
 }
 
 .ship-grid {
@@ -20,7 +87,19 @@
 
 }
 
-.ship-title {
+.ship-title-300 {
+  opacity: 0.5;
+  font-family: 'Josefin Sans', sans-serif;
+  font: josefin;
+  font-size: 8em;
+  text-align: center;
+  padding-top: 1.5em;
+  color: transparent;
+  text-shadow: 0 0 5px rgba(255,255,255,0.5);
+
+}
+
+.ship-title-350r {
   color: white;
   opacity: 0.5;
   font: josefin;
@@ -30,11 +109,6 @@
   text-shadow:
       -1px -1px 1px #111,
       2px 2px 1px #363636;
-}
-
-#ship-890jump {
-  padding: 0;
-  overflow: hidden;
 }
 
 #ship-M50 {
@@ -91,6 +165,16 @@
   top: -24%
 }
 
+#ship-300-title-par {
+  position: static;
+  color: white;
+  background-image: url(../assets/backgrounds/space-station-par.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 20vh;
+  width: 100%;
+}
+
 #ship-350r-title-par {
   position: static;
   color: white;
@@ -99,6 +183,11 @@
   background-size: cover;
   height: 20vh;
   width: 100%;
+}
+
+#ship-890jump {
+  padding: 0;
+  overflow: hidden;
 }
 
 /* ---- 890 Image 4900x1900 ---- */
