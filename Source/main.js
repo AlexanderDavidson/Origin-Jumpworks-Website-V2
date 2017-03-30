@@ -1,3 +1,11 @@
+$('.ui.accordion')
+  .accordion()
+;
+
+$('.ui.dropdown')
+  .dropdown()
+;
+
 var $shipPulse = document.getElementById('ship-par')
 
 $shipPulse.addEventListener("mouseover", function( event ) {
