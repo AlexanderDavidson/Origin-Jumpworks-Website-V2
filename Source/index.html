@@ -6,11 +6,15 @@
     <link rel="stylesheet" href="default.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/components/accordion.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/components/accordion.min.js"></script>
+
 
   </head>
   <body>
@@ -53,15 +57,15 @@
       <div class="ui grey inverted menu" id="grey-nav">
         <div class="right menu">
           <a class="item">
-            <i class="wrench icon"></i>
+            <i class="large wrench icon"></i>
             ┊ Build Your Own ┊
           </a>
           <a class="item">
-            <i class="suitcase icon"></i>
+            <i class="large dashboard icon"></i>
             ┊ Origin Lifestyle ┊
           </a>
           <a class="item">
-            <i class="bitcoin icon"></i>
+            <i class="large user icon"></i>
             ┊ Certified Pre-Owned ┊
           </a>
         </div>
@@ -77,30 +81,60 @@
 
     <div class="ui grid">
       <!-- 85x, M50 -->
-      <div id="ships-title">
+      <div id="ships-title" class="fixed-bg-dividers-top">
         <div class="ship-title-85x">85x</div>
         <div class="ship-title-m50">M50</div>
       </div>
 
-      <div class="two column row ship-grid">
+      <div class="two column row ship-grid img-shadow">
         <div class="blue column" id="ship-85x">
-          <img class="ui fluid image" src="../assets/Ships/85x-Runabout/85-X-city-shot.jpg">
+          <img class="ui fluid image ship-par" src="../assets/Ships/85x-Runabout/85-X-city-shot-bg.jpg">
+          <img class="ui fluid image ship-par" id="ship-par" src="../assets/Ships/85x-Runabout/85-X-city-shot-ship.png">
         </div>
         <div class="red column" id="ship-M50">
           <img class="ui fluid image" src="../assets/Ships/M50-Interceptor/m50-taxi.jpg">
+          <div class="ui inverted segment accordion-drop">
+            <div class="ui inverted accordion">
+              <div class="title">
+                <i class="dropdown icon"></i>
+                M50
+              </div>
+              <div class="content">
+                <p class="transition hidden">If you want to get from point A to point B as quickly as possible and with as much style as possible then ORIGIN’s M50 is for you. Featuring supercharged engines that counter a tiny weapons loadout, the M50 is a ship for going FAST. The core spaceframe is used by both racing teams and for military courier missions, but the civilian M50 is a luxury spacecraft like no other. Perfect for the mercenary who prefers speed over armor in a dogfight… or the weekend warrior looking to impress the ladies.</p>
+              </div>
+              <div class="title">
+                <i class="dropdown icon"></i>
+                History
+              </div>
+              <div class="content">
+                <p>There are many breeds of dogs. Each breed varies in size and temperament. Owners often select a breed of dog that they find to be compatible with their own lifestyle and desires from a companion.</p>
+              </div>
+              <div class="title">
+                <i class="dropdown icon"></i>
+                How do you acquire a dog?
+              </div>
+              <div class="content">
+                <p>Three common ways for a prospective owner to acquire a dog is from pet shops, private owners, or shelters.</p>
+                <p>A pet shop may be the most convenient way to buy a dog. Buying a dog from a private owner allows you to assess the pedigree and upbringing of your dog before choosing to take it home. Lastly, finding your dog from a shelter, helps give a good home to a dog who may not find one so readily.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="ui inverted segment shuttle-divider">
-        <div class="ui horizontal inverted divider"><i class="space shuttle icon"></i></div>
+      <div id="ships-title2" class="fixed-bg-dividers-top">
       </div>
 
+    <div class="ui inverted segment shuttle-divider">
+      <div class="ui horizontal inverted divider"><i class="space shuttle icon"></i></div>
+    </div>
+
     <!-- 300 Series -->
-    <div id="ships-300-title-par">
+    <div id="ships-300-title-par" class="fixed-bg-dividers">
       <div class="ship-title-300">300 SERIES</div>
     </div>
     <!-- 300i -->
-      <div class="three column row ship-grid">
+      <div class="three column row ship-grid img-shadow">
         <div class="grey column" id="ship-300i">
           <div class="ui fluid image">
             <div class="ui black ribbon label">
@@ -128,44 +162,63 @@
           </div>
         </div>
       </div>
-      <!-- 350r -->
-      </div>
-      <div class="row ship-grid">
-        <svg viewbox="0 0 960 300">
-        	<symbol id="s-text">
-        		<text text-anchor="middle" x="50%" y="80%">350r</text>
-        	</symbol>
+    </div>
 
-        	<g class = "g-ants">
-        		<use xlink:href="#s-text" class="text-copy"></use>
-        		<use xlink:href="#s-text" class="text-copy"></use>
-        		<use xlink:href="#s-text" class="text-copy"></use>
-        		<use xlink:href="#s-text" class="text-copy"></use>
-        		<use xlink:href="#s-text" class="text-copy"></use>
-        	</g>
-        </svg>
+        <!-- ================350r==================== -->
+    <div id="ships-350-par" class="fixed-bg-dividers"></div>
+    <div class="row ship-grid">
+      <svg viewbox="0 0 960 300">
+      	<symbol id="s-text">
+      		<text text-anchor="middle" x="50%" y="70%">350r</text>
+      	</symbol>
 
-        <div class="teal column" id="ship-350r">
-          <div class="ui fluid image">
-            <div class="ui black ribbon label">
-              <i class="big chevron right icon"></i> <h2 class="clip-text clip-text_twelve">350r</h2>
-            </div>
-            <img id="ship-350r-img" src="../assets/Ships/300-Series/350r/350r-top.jpg">
+      	<g class = "g-ants">
+      		<use xlink:href="#s-text" class="text-copy"></use>
+      		<use xlink:href="#s-text" class="text-copy"></use>
+      		<use xlink:href="#s-text" class="text-copy"></use>
+      		<use xlink:href="#s-text" class="text-copy"></use>
+      		<use xlink:href="#s-text" class="text-copy"></use>
+      	</g>
+      </svg>
+
+      <div class="teal column" id="ship-350r">
+        <div class="ui fluid image">
+          <div class="ui black ribbon label">
+            <i class="big chevron right icon"></i> <h2 class="clip-text clip-text_twelve">350r</h2>
           </div>
-        </div>
-      </div>
-
-      <div class="ui inverted segment shuttle-divider">
-        <div class="ui horizontal inverted divider"><i class="space shuttle icon"></i></div>
-      </div>
-
-    <!-- 890 Jump -->
-      <div class="row ship-grid">
-        <div class="black column" id="ship-890jump">
-          <img class="ui fluid image" src="../assets/Ships/890-Jump/890bg.jpg">
+          <img id="ship-350r-img" src="../assets/Ships/300-Series/350r/350r-top.jpg">
         </div>
       </div>
     </div>
+
+    <div id="ships-300-bottom-par" class="fixed-bg-dividers"></div>
+
+    <!-- ============================================================================================= -->
+    <div class="ui inverted segment shuttle-divider">
+      <div class="ui horizontal inverted divider"><i class="space shuttle icon"></i></div>
+    </div>
+
+
+  <!-- ============================================================================================= -->
+    <!-- 890 Jump -->
+    <div class="ui grid">
+      <div id="ship-890-title-par" class="fixed-bg-dividers-top">
+        <div class="ship-title-890">890 Jump</div>
+      </div>
+      <div class="row ship-grid">
+        <div class="black column img-shadow" id="ship-890jump">
+          <img class="ui fluid image" src="../assets/Ships/890-Jump/890-sunset2.jpg">
+        </div>
+      </div>
+    </div>
+
+    <div id="ship-890-bottom-par" class="fixed-bg-dividers-top">
+    </div>
+
+    <div class="ui inverted segment shuttle-divider">
+      <div class="ui horizontal inverted divider"><i class="space shuttle icon"></i></div>
+    </div>
+
 
     <script type="text/javascript" src="main.js"></script>
   </body>

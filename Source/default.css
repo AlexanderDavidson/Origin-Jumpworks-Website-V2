@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: black !important;
   color: white;
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -9,55 +9,72 @@ h2 {
 }
 
 .shuttle-divider {
-  margin: 0;
+  margin: 0 !important;
+}
+
+.img-shadow {
+  box-shadow: 0px -5px 22px 3px #000;
+  z-index: 2;
+}
+
+.fixed-bg-dividers {
+  box-shadow: inset 0px 5px 22px 3px #000;
+}
+
+.fixed-bg-dividers-top {
+  box-shadow: inset 0px 20px 22px 3px #000;
+}
+
+.accordion-drop {
+  margin: 0 !important;
 }
 
 /* -------animated text ---------- */
 
 svg {
-    display: block;
-    position: absolute;
-    z-index: 5;
-    font: 20.5em 'Josefin Sans', sans-serif;
-    margin: 0 auto;
+  display: block;
+  position: absolute;
+  z-index: 5;
+  font: 2000% 'Josefin Sans', sans-serif;
+  margin: 0 auto;
 }
 
 .text-copy {
-    fill: rgba(255, 255, 255, 0.06);
-    stroke: white;
-    stroke-dasharray: 6% 29%;
-    stroke-width: 0.01em;
-    stroke-dashoffset: 0%;
-    animation: stroke-offset 5.5s infinite linear;
+  fill: rgba(255, 255, 255, 0.06);
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 0.003em;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
 }
 
-.text-copy:nth-child(1){
-	stroke: #324C63;
-	animation-delay: -1;
+.text-copy:nth-child(1) {
+  stroke: #90928f;
+  animation-delay: -1;
 }
 
-.text-copy:nth-child(2){
-	stroke: #827E75;
-	animation-delay: -2s;
+.text-copy:nth-child(2) {
+  stroke: #413c42;
+  animation-delay: -2s;
 }
 
-.text-copy:nth-child(3){
-	stroke: #E6C97C;
-	animation-delay: -3s;
+.text-copy:nth-child(3) {
+  stroke: #111;
+  animation-delay: -3s;
 }
 
-.text-copy:nth-child(4){
-	stroke: #253545;
-	animation-delay: -4s;
+.text-copy:nth-child(4) {
+  stroke: #def6f8;
+  animation-delay: -4s;
 }
 
-.text-copy:nth-child(5){
-	stroke: #4F7182;
-	animation-delay: -5s;
+.text-copy:nth-child(5) {
+  stroke: #e4cb54;
+  animation-delay: -5s;
 }
 
-@keyframes stroke-offset{
-	100% {stroke-dashoffset: -35%;}
+@keyframes stroke-offset {
+  100% { stroke-dashoffset: -35%; }
 }
 
 /* ----------------------- */
@@ -87,11 +104,11 @@ svg {
   text-align: center;
   display: block;
   text-shadow:
-      -1px -1px 1px #111,
-      2px 2px 1px #363636;
-
+    -1px -1px 1px #111,
+    2px 2px 1px #363636;
 }
 
+/* ----------------------85x & m50 -------------------------------------- */
 .ship-title-85x {
   opacity: 1;
   display: inline;
@@ -102,7 +119,7 @@ svg {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 6vw;
   text-align: center;
-  background: url(../assets/backgrounds/space-station-par.jpg) repeat;
+  background: url(../assets/backgrounds/asterroid.jpg) repeat;
   background-attachment: fixed;
   background-size: cover;
   -webkit-filter: invert(100%);
@@ -121,14 +138,53 @@ svg {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 6vw;
   text-align: center;
-  background: url(../assets/backgrounds/space-station-par.jpg) repeat;
+  background: url(../assets/backgrounds/asterroid.jpg) repeat;
   background-attachment: fixed;
   background-size: cover;
   -webkit-filter: invert(100%);
   filter: hue-rotate(10deg) brightness(4) drop-shadow(4px 4px 8px black);
   -webkit-background-clip: text;
-
 }
+
+.ship-par {
+  display: fixed;
+  position: absolute !important;
+}
+
+#ship-M50 {
+  padding: 0;
+  overflow: hidden;
+}
+
+#m50-button {
+  position: absolute;
+  z-index: 5;
+}
+
+#ship-85x {
+  padding: 0;
+  overflow: hidden;
+}
+
+#ships-title {
+  position: static;
+  background-image: url(../assets/backgrounds/asterroid.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 10vw;
+  width: 100%;
+}
+
+#ships-title2 {
+  position: static;
+  background-image: url(../assets/backgrounds/asterroid.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 10vw;
+  width: 100%;
+}
+
+/* ------------------------------ 300 Series ------------------------------------------ */
 
 .ship-title-300 {
   opacity: 1;
@@ -143,33 +199,23 @@ svg {
   -webkit-filter: invert(100%);
   filter: hue-rotate(10deg) brightness(4) drop-shadow(10px 10px 10px black);
   -webkit-background-clip: text;
-
 }
 
-#ship-M50 {
-  padding: 0;
-  overflow: hidden;
-}
-
-#ship-85x {
-  padding: 0;
-  overflow: hidden;
-}
-
-#ships-title {
-  position: static;
-  background-image: url(../assets/backgrounds/space-station-par.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  height: 10vw;
-  width: 100%;
-}
 #ships-300-title-par {
   position: static;
   background-image: url(../assets/backgrounds/space-station-par.jpg);
   background-attachment: fixed;
   background-size: cover;
   height: 30vw;
+  width: 100%;
+}
+
+#ships-350-par {
+  position: static;
+  background-image: url(../assets/backgrounds/space-station-par.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 10vw;
   width: 100%;
 }
 
@@ -190,7 +236,6 @@ svg {
   position: absolute;
   top: -33%;
   left: 0;
-
 }
 
 #ship-325a {
@@ -201,36 +246,59 @@ svg {
 #ship-350r {
   padding: 0;
   overflow: hidden;
-  height: 48em;
+  height: 40vw;
 }
 
 #ship-350r-img {
-  top: -24%
+  top: -24%;
 }
 
-#ship-300-title-par {
+#ships-300-bottom-par {
   position: static;
-  color: white;
   background-image: url(../assets/backgrounds/space-station-par.jpg);
   background-attachment: fixed;
   background-size: cover;
-  height: 20vh;
+  height: 10vw;
   width: 100%;
 }
 
-#ship-350r-title-par {
-  position: static;
-  color: white;
-  background-image: url(../assets/backgrounds/space-station-par.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  height: 20vh;
-  width: 100%;
-}
+/* -------------------------------- 890 Image 4900x1900 --------------------------------------- */
 
 #ship-890jump {
   padding: 0;
   overflow: hidden;
 }
 
-/* ---- 890 Image 4900x1900 ---- */
+#ship-890-title-par {
+  position: static;
+  color: white;
+  background-image: url(../assets/backgrounds/atmo.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+}
+
+.ship-title-890 {
+  opacity: 1;
+  line-height: 30vw;
+  color: transparent;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16vw;
+  text-align: center;
+  background: url(../assets/backgrounds/atmo.jpg) repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-filter: invert(100%);
+  filter: hue-rotate(25deg) brightness(3) drop-shadow(10px 10px 10px black);
+  -webkit-background-clip: text;
+}
+
+#ship-890-bottom-par {
+  position: static;
+  color: white;
+  background-image: url(../assets/backgrounds/atmo.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 10vw;
+  width: 100%;
+}
