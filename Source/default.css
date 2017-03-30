@@ -5,6 +5,10 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 h2 {
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -27,7 +31,7 @@ h2 {
 }
 
 .accordion-drop {
-  margin: 0 !important;
+  width: 100%;
 }
 
 /* -------animated text ---------- */
@@ -110,6 +114,14 @@ svg {
     2px 2px 1px #363636;
 }
 
+#ship-side-img-before-m50 {
+  object-fit: cover;
+}
+
+#ship-side-img-after-m50 {
+  object-fit: cover;
+}
+
 /* ----------------------85x & m50 -------------------------------------- */
 .info-text {
   padding-left: 3vw;
@@ -156,6 +168,10 @@ svg {
 #ship-M50 {
   padding: 0;
   overflow: hidden;
+}
+
+#m50-trophy-img {
+  box-shadow: 0 0 150px 50px black;
 }
 
 #ship-85x {
