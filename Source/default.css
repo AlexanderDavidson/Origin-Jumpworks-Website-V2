@@ -97,10 +97,6 @@ svg {
   height: 5em;
 }
 
-.ship-grid {
-  /*height: 32em;*/
-}
-
 .ship-title-flavor {
   color: white;
   opacity: 0.5;
@@ -115,46 +111,46 @@ svg {
 }
 
 /* ----------------------85x & m50 -------------------------------------- */
+.info-text {
+  padding-left: 3vw;
+  padding-right: 60vw;
+}
+
 .ship-title-85x {
-  opacity: 1;
-  display: inline;
   float: left;
   padding-left: 5vw;
-  line-height: 10vw;
+  line-height: 23vw;
   color: transparent;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 6vw;
+  font-size: 22vw;
   text-align: center;
   background: url(../assets/backgrounds/asterroid.jpg) repeat;
   background-attachment: fixed;
   background-size: cover;
-  -webkit-filter: invert(100%);
-  filter: hue-rotate(10deg) brightness(4) drop-shadow(4px 4px 8px black);
+  filter: hue-rotate(-20deg) brightness(4) drop-shadow(4px 4px 8px black);
   -webkit-background-clip: text;
-
 }
 
 .ship-title-m50 {
-  opacity: 1;
-  display: inline;
   float: right;
   padding-right: 5vw;
-  line-height: 10vw;
+  line-height: 24vw;
   color: transparent;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 6vw;
+  font-size: 20vw;
   text-align: center;
   background: url(../assets/backgrounds/asterroid.jpg) repeat;
   background-attachment: fixed;
   background-size: cover;
-  -webkit-filter: invert(100%);
-  filter: hue-rotate(10deg) brightness(4) drop-shadow(4px 4px 8px black);
+  filter: hue-rotate(-20deg) brightness(4) drop-shadow(4px 4px 8px black);
   -webkit-background-clip: text;
 }
 
 .ship-par {
   display: fixed;
-  position: absolute !important;
+
+  /* position: absolute !important; */
+
 }
 
 #ship-M50 {
@@ -162,22 +158,31 @@ svg {
   overflow: hidden;
 }
 
-#m50-button {
-  position: absolute;
-  z-index: 5;
-}
-
 #ship-85x {
   padding: 0;
   overflow: hidden;
 }
 
-#ships-title {
+#ship-par-85x {
+  position: absolute;
+  top: 0;
+}
+
+#ships-title-m50 {
   position: static;
   background-image: url(../assets/backgrounds/asterroid.jpg);
   background-attachment: fixed;
   background-size: cover;
-  height: 10vw;
+  height: 20vw;
+  width: 100%;
+}
+
+#ships-title-85x {
+  position: static;
+  background-image: url(../assets/backgrounds/asterroid.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 20vw;
   width: 100%;
 }
 

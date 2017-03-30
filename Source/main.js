@@ -6,7 +6,7 @@ $('.ui.dropdown')
   .dropdown()
 ;
 
-var $shipPulse = document.getElementById('ship-par')
+var $shipPulse = document.getElementById('ship-par-85x')
 
 $shipPulse.addEventListener("mouseover", function( event ) {
     // highlight the mouseover target
