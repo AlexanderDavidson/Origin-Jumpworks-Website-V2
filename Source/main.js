@@ -16,3 +16,14 @@ $shipPulse.addEventListener("mouseover", function( event ) {
       event.target.classList.remove('animated', 'pulse')
     }, 1000);
   }, false);
+
+var $shipPulse = document.getElementById('ship-par-m50')
+
+$shipPulse.addEventListener("mouseover", function( event ) {
+    // highlight the mouseover target
+    event.target.classList.add('animated', 'pulse')
+
+    setTimeout(function() {
+      event.target.classList.remove('animated', 'pulse')
+    }, 1000);
+  }, false);

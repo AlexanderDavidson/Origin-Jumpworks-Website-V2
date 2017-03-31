@@ -171,7 +171,18 @@ svg {
 }
 
 #m50-trophy-img {
-  box-shadow: 0 0 150px 50px black;
+  box-shadow: 0 0 10em 2em black;
+  border-radius: 14em 0em 14em 0em;
+}
+
+#ship-par-m50 {
+  position: absolute;
+  top: 0;
+}
+
+#inset-85x-img {
+  box-shadow: 0 0 10em 2em black;
+  border-radius: 0em 14em 0em 14em;
 }
 
 #ship-85x {
@@ -220,7 +231,7 @@ svg {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16vw;
   text-align: center;
-  background: url(../assets/backgrounds/space-station-par.jpg) repeat;
+  background: url(../assets/backgrounds/helmets.png) repeat;
   background-attachment: fixed;
   background-size: cover;
   -webkit-filter: invert(100%);
@@ -230,16 +241,53 @@ svg {
 
 #ships-300-title-par {
   position: static;
-  background-image: url(../assets/backgrounds/space-station-par.jpg);
+  background-image: url(../assets/backgrounds/helmets.png);
   background-attachment: fixed;
   background-size: cover;
-  height: 30vw;
+  height: 20vw;
   width: 100%;
+}
+
+#ships-title-300-series-names {
+  position: static;
+  background-image: url(../assets/backgrounds/helmets.png);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 20vw;
+  width: 100%;
+}
+
+.ships-300-names {
+  display: inline-block;
+  line-height: 32vw;
+  color: transparent;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 7vw;
+  text-align: center;
+  background: url(../assets/backgrounds/helmets.png) repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  filter: hue-rotate(-20deg) brightness(4) drop-shadow(4px 4px 8px black);
+  -webkit-background-clip: text;
+  width: 33.33333%;
+}
+
+.ships-title-300i-series-name {
+  float: left;
+
+}
+
+.ships-title-315p-series-name {
+
+}
+
+.ships-title-325a-series-name {
+  float: right;
 }
 
 #ships-350-par {
   position: static;
-  background-image: url(../assets/backgrounds/space-station-par.jpg);
+  background-image: url(../assets/backgrounds/helmets.png);
   background-attachment: fixed;
   background-size: cover;
   height: 10vw;
@@ -282,11 +330,18 @@ svg {
 
 #ships-300-bottom-par {
   position: static;
-  background-image: url(../assets/backgrounds/space-station-par.jpg);
+  background-image: url(../assets/backgrounds/helmets.png);
   background-attachment: fixed;
   background-size: cover;
   height: 10vw;
   width: 100%;
+}
+
+.acc-300 {
+  background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(20, 20, 35, 0.62)), url(../assets/backgrounds/helmets.png);
+  background-attachment: fixed;
+  background-size: cover;
+  box-shadow: 0px 0em 3em 1.5em #000;
 }
 
 /* -------------------------------- 890 Image 4900x1900 --------------------------------------- */
