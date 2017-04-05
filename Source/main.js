@@ -10,7 +10,7 @@ $('.ui.modal')
   .modal()
 ;
 
-$('.content.example .ui.embed').embed();
+$('.ui.embed').embed();
 
 $(document).ready(function(){
      $('#modal-350r-button').click(function(){
